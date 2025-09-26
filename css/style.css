@@ -37,15 +37,51 @@ h2{
 
 .badg{
     display: inline-block;
-    top:10px;
+    /* top:10px; */
     margin:15px 5px 0 5px;
     padding:5px;
-    border:#03e9f4 1px solid;
+    border:#03e9f4 2px solid;
     border-radius: 10px;
-    color:#03e9f4;
-    font-size: 14px;
+    /* color:#03e9f4; */
+    animation: moveRandom 3s infinite alternate, enmation 2.5s infinite alternate;
+    position: relative;
+    font-size: 16px;
     background-color: rgba(15, 23, 42, 0.377);
 }
+
+/* // Add this at the end of the file */
+@keyframes moveRandom {
+    0% { 
+        transform: translateY(10px);
+     }
+    100% { transform: translateY(-200px); }
+}
+@keyframes enmation {
+    0% {
+        box-shadow: 0 0 0 0 #03e9f4;
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 30px 5px #03e9f4;
+        transform: scale(1.05);
+    }
+
+}
+.spotlight {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(145, 179, 180, 0.25) 0%, rgba(15,23,42,0.0) 70%);
+    /* mix-blend-mode: lighten; */
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background 0.2s;
+}
+
 .skills{
     width: 400px;
 }
@@ -111,6 +147,12 @@ a:hover{
     border-radius: 15px;
     width: 100%;
     /* transform: 1.3s; */
+}
+.about p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.8cm;
+    padding-top: 20px;
 }
 /* expreince section  */
 .experance{
