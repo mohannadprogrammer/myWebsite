@@ -178,6 +178,7 @@ a:hover{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 2000px;
     
     
 }
@@ -186,8 +187,11 @@ a:hover{
     /* font-weight: 700;
     font-size: 25px; */
 }
+.container div{
+    padding:100px 50px 20px 0;
+
+}
 .about{
-    padding:100px 50px 20px 0px;
     font-weight: 700;
     font-size: 24px;
     border-radius: 15px;
@@ -203,7 +207,6 @@ a:hover{
 /* expreince section  */
 .experance{
     
-    padding:50px 0;
 }
 .experance ul{
     list-style:none;
@@ -236,9 +239,9 @@ a:hover{
 /* project section */
 .projects{
     /* display: none; */
-    padding :50px 0;
+    /* padding :50px 0; */
 }
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
     body{
         margin:20px 20px  40px 30px ;
         padding: 0;
@@ -246,16 +249,21 @@ a:hover{
        
 
     }
+    .breaker{
+        display: none;
+    }
     .me{
         position: relative;
         top:10px;
-        height: 30vh;
+        height: 200vh;
         margin:0;
         padding:0;
+        background-color: rgba(218, 10, 10, 0);
+
         
     }
     .container{
-        margin-top:200px;
+        /* margin-top:200px; */
         padding: 30px 0 0 0 ;
         height: 80%;
         width: 100%;
@@ -265,4 +273,4 @@ a:hover{
         flex-direction: row;
     }
     
-}
+} 

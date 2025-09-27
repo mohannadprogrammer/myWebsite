@@ -11,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- import icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM6tU8zTt2+q+fyxN3GxV5p5fXh6C8z9O3O5p6b5H6d5e5c5mX1Z5d5Z5d5Z5=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7c9aa353cc.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -48,11 +47,17 @@
                 <li>Experience</li>
             </a>
             <a onclick="navaction('projects')" href="#projects">
-                <li>projects</li>
+                <li>Projects</li>
+            </a>
+            <a onclick="navaction('projects')" href="#contact">
+                <li>Contact</li>
             </a>
         </ul>
         <ul class="social">
-            <li> <a class="fa fa-whatsapp">whasapp</a></li>
+            <li> <a class="fa fa-github" href="https://www.github.com/mohannadprogrammer" target="_blank" rel="noopener"></a></li>
+            <li> <a class="fa fa-whatsapp" href="https://web.whatsapp.com/+249115449901" target="_blank" rel="noopener"></a></li>
+            <li> <a class="fa fa-linkedin" href="https://www.linkedin.com/in/mohannadwaheed/" target="_blank" rel="noopener"></a></li>
+            <!-- <li> <a class="fa fa-google" href="#" target="_blank" rel="noopener"></a></li> -->
         </ul>
     </div>
     <div class="container">
@@ -185,6 +190,15 @@
                         community.</p>
                 </li>
             </ul>
+        </div>
+        <div class="contact" id ="contact">
+            <form>
+                <h1>Contact Me</h1>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
     </div>
