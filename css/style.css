@@ -188,7 +188,7 @@ a:hover{
     font-size: 25px; */
 }
 .container div{
-    padding:100px 50px 20px 0;
+    padding:0 50px 20px 0;
 
 }
 .about{
@@ -197,6 +197,11 @@ a:hover{
     border-radius: 15px;
     width: 100%;
     /* transform: 1.3s; */
+}
+.about .avatar{
+    height:60%;
+    width: 100%;
+    top:0;
 }
 .about p{
     font-weight: 500;
